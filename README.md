@@ -174,6 +174,92 @@ After we had worked apart for the last few days we got together and merged our p
 
 ![Screenshot of Map](./client/src/assets/readme_images/map.png)
 
+We found a plugin online and brought it into the app with relative ease, although we struggled to use this to filter our searches, as although we could style the map to change colour over each continent as you hovered over it, we could only apply a link to the entire image. This meant when it linked through to the cities page, there was no value it could use to filter the search. I came up with a plan to store the continent selected in the user’s local storage, which we then grabbed again when the cities page was loaded and we filtered the results accordingly.
+
+![Screenshot of local storage](./client/src/assets/readme_images/localstorage.png)
+
+This meant we did need to go back and add the continent to the city schema, but it was a quick change, and with that our interactive map was working. The one issue this created was that if the user then selected to go to the cities page via the hamburger, the filter would still apply. To get around this we made two versions of the cities page, one that was linked to via the map and was filtered, and another unfiltered version through the hamburger.
+
+Finally we got to work on our styling, going for a color scheme of white and blue. Using SASS I was able to store the values for our colours as variables so we could call on them throughout to maintain consistency. We took screenshots of each page as we finished it which made it easier to ensure we had a consistent look across all the pages.
+
+```
+$uranian-blue: #bbdefb;
+$light-sky-blue: #90caf9;
+$blue-jeans: #64b5f6;
+$blue-jeans-2: #42a5f5;
+$tufts-blue: #2196f3;
+$bleu-de-france: #1e88e5;
+$bright-navy-blue: #1976d2;
+$denim: #1565c0;
+$cobalt-blue: #0d47a1;
+$alice-blue: #e3f2fd;
+
+```
+
+Once this was done we filled the database with comments and ratings so we could fully demonstrate the functionality of the site. As a little extra, I asked Simon (who designed the logo) to break it into two separate parts, one with just the compass needle and one with the rest of the logo. Once he did I added in an extra CSS animation that made the needle spin, adding a quirky little styling feature.
+
+## Final Product: ##
+
+#### Home Page: ####
+
+![Screenshot of home page](./client/src/assets/readme_images/home.png)
 
 
+#### About Page: ####
 
+![Screenshot of about page](./client/src/assets/readme_images/about.png)
+
+
+#### Cities Page: ####
+
+![Screenshot of cities page](./client/src/assets/readme_images/cities.png)
+
+
+#### Single City Page: ####
+
+![Screenshot of city page](./client/src/assets/readme_images/singlecity.png)
+
+
+#### User Suggestions Page: ####
+
+![Screenshot of user suggestions page](./client/src/assets/readme_images/cityrecs.png)
+
+
+#### Profile Page: ####
+
+![Screenshot of profile page](./client/src/assets/readme_images/userprofile.png)
+
+
+#### Edit Profile Page: ####
+
+![Screenshot of edit profile page](./client/src/assets/readme_images/editprofile.png)
+
+
+#### Add Recommendation Page: ####
+
+![Screenshot of add recommendation page](./client/src/assets/readme_images/addrec.png)
+
+## Wins & Blockers: ##
+
+I was really happy with the final product we created. I think the main win for me personally was that we managed to pack in a ton of functionality and the site ran very smoothly, which made for a slick presentation. I was also happy with the amount of work I managed to do with both the front and back ends, allowing me to utilise all the skills I had learned so far on the course, as opposed to just focusing on one area.
+
+As for blockers, as mentioned above there was unfortunately one member of the team who didn’t contribute to the project. As such it meant I had to spend a lot of time making up the workload, which ultimately meant we didn’t have time at the end to implement our other stretch goals.
+
+Another blocker would be that there were several occasions where we came across something that meant we needed to go and change our models, which in turn meant adding this information to our seed database and then reseeding the whole thing. This took quite a lot of time and I think really showed how much we could have benefitted from being even more thorough in the planning stages to clarify what we needed to be in each model.
+
+## Bugs: ##
+
+* Technically the code does allow for one user to make multiple ratings on a single recommendation, we just used a front-end workaround to prevent that from happening.
+* The ratings wouldn’t come through for the user profile page, so we removed these from those recommendation cards.
+
+
+## Key Learnings: ##
+
+* Working in a group - merging git branches, communication, sharing workloads.
+* Linking a front and back-end in VS Code - using proxies.
+
+
+## Future Content: ##
+* Having user profile pictures on their accounts.
+* Implementing different levels of user depending on how active they are.
+* Fixing it so the ratings come through on the user profile page.
