@@ -4,7 +4,8 @@ Teams of Three
 Time Frame: 9 days  
 Visit the site: https://bit.ly/jronedayin  
 
-Login Credentials:  
+Login Credentials:
+--------  | --------
 Username: | James
 Password: | Jamespass
 
