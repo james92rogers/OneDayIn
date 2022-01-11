@@ -180,6 +180,13 @@ We found a plugin online and brought it into the app with relative ease, althoug
 
 This meant we did need to go back and add the continent to the city schema, but it was a quick change, and with that our interactive map was working. The one issue this created was that if the user then selected to go to the cities page via the hamburger, the filter would still apply. To get around this we made two versions of the cities page, one that was linked to via the map and was filtered, and another unfiltered version through the hamburger.
 
+Another stretch goal we added was including the highest-rated user recommendation on the main city information page. If the website was in full use and had an active community, we would have liked to do this for each of the criterias we had set, but for the purposes of our presentation we just took the overall best-rated recommendation. To display this was fairly simple. I just took all of the recommendations and sorted them into a new array, based on their average rating scores:
+
+`const sortedRecommendations = recommendations.sort((a, b) => (a.averageRating > b.averageRating ? -1 : 1))`
+
+Then when calling the information, I only used whatever data was stored in sortedRecommendations[0] - knowing that this would contain the highest rated recommendation. We added in a ternary that determined if the sortedRecommendations array had any length, and if it didn't, then it displayed some text instead that informed the user that the city hadn't received any rated recommendations yet.
+
+
 Finally we got to work on our styling, going for a color scheme of white and blue. Using SASS I was able to store the values for our colours as variables so we could call on them throughout to maintain consistency. We took screenshots of each page as we finished it which made it easier to ensure we had a consistent look across all the pages.
 
 ```
