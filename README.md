@@ -51,7 +51,7 @@ For my third project as part of General Assembly’s Software Engineering course
 * Start the back-end server first running: `yarn serve`
 * Start the front-end by first running: `cd client` followed by: `yarn start`
 
-## Day 1 - Planning:##
+## Day 1 - Planning:  ##
 
 Once we had decided the theme for the app the next thing we did was create a Trello board to help us keep on top of our planning. Here we created sections for our wireframes, endpoints, and models that we would need to have done in order to get sign-off. We ended up using this Trello board across the entire project.
 
@@ -114,7 +114,7 @@ const AllCitiesList = () => {
 
 Once this was done I was able to create the single city pages, which is where most of the front-end work went into. I started by making a plain page with all of the information on it that I wanted. Then, I did some styling, as I was going to be spending a lot of time on this page and wanted to get a feel for how it might look. This wasn’t the final design, but still made it easier to work with visually.
 
-![Screenshot of early layout](./client/src/assets/readme_images/earlylayout.png)
+![Screenshot of early layout](./client/src/assets/readme_images/earlylayout.jpg)
 
 Once all of the information was present, I got to work making the links at the bottom of the page link to the user suggestion pages for each city. From here I was able to add in the CRUD functionality for user suggestions, which required some slight tweaking of the back-end to get it working the way I needed. The main change I added to the back-end was to the user model, creating a field to store all the recommendations they had made. This meant I could add in functionality later to display the user’s recommendations on their user profile. This also meant I had to add some extra lines into the create recommendation function in the back-end, so it would not only add the recommendation to the city, but the user as well. The same went for editing and deleting recommendations.
 
