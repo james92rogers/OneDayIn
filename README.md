@@ -67,5 +67,5 @@ After we had established the model and the information we would be storing for e
 
 Once we had designed the wireframe and had the models sorted, we moved on to the end points and the pages we wanted to make. This would give us a clear indication of what functionality we would need to design in the back-end, as well as make it easier to divide the workload on the front-end. On this we also added in some more stretch goals we wanted to potentially achieve if we had time.
 
-![Screenshot of endpoints](./client/src/assets/readme_images/endpoints.png)
+![Screenshot of endpoints](./client/src/assets/readme_images/endpoints 1.png)
 ![Screenshot of endpoints](./client/src/assets/readme_images/endpoints 2.png)
