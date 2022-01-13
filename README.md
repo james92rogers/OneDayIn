@@ -33,7 +33,7 @@ For my third project as part of General Assembly’s Software Engineering course
 * Express
 * Bcrypt
 * Mongoose
-* jsonwebtoken
+* JSON Web Token
 * React
 * Axios
 * SASS
